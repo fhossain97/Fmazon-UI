@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import Navbar from '../../components/Navbar'
 
 const index = ({itemId}) => {
 const router = useRouter()
@@ -10,10 +11,8 @@ router.push('/login')
 
   return (
     <div>
-      <Link href='/login'>
-      Login
-      </Link>
 
+<Navbar />
       <Link href={`/items/${itemId}`}>
     Item Id
       </Link>
