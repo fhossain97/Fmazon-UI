@@ -13,19 +13,20 @@ const page = async() => {
     if (!loggedin) {
         signIn()
     }else {
-        <div>Please Sign In or Sign Up to view Fmazon.</div>
         setSession(false)
-        console.log(sessionSession)
     }
 }
+page()
     }, [])
 
     if (session){
         return <h1>Loading ...</h1>
+    } else {
+        <div>Please Sign In or Sign Up to view Fmazon.</div>
     }
 
   return (
-    <div>home</div>
+    <div>home page</div>
   )
 }
 
