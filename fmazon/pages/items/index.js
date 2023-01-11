@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 import Items from '../../components/items/Items'
 
 
+
 const index = ({itemId}) => {
 const router = useRouter()
   const handleClick = () => {

@@ -7,14 +7,15 @@ const Items = ({items}) => {
 
 
     <div>
-        {items.map(item => {
-            return <Item item={item}  />
+        {items?.map(item => {
+            return <Item key={item.id} item={item}  />
         })}
 
 
 
 
     </div>
+
   )
 }
 
